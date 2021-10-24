@@ -11,7 +11,7 @@
     "prettier:format": "prettier --config .prettierrc 'src/**/*.js' --write",
     "eslint": "eslint --config .eslintrc 'src/**/*.js'",
     "eslint:fix": "npm run eslint --fix",
-    "dev": "nodemon --watch src -e js,ejs src/server.js",
+    "dev": "nodemon --watch src -e js,ejs --experimental-modules --es-module-specifier-resolution=node src/server.js",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -28,10 +28,11 @@
     "prettier": "^2.4.1"
   },
   "dependencies": {
-    "reload": "^3.2.0",
+    "compression": "^1.7.4",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.1"
+    "express-ejs-layouts": "^2.5.1",
+    "reload": "^3.2.0"
   }
 }
