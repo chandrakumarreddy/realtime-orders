@@ -1,9 +1,12 @@
 {
-  "name": "realtime-pizza",
+  "name": "realtime-orders",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": ">=15"
+  },
   "scripts": {
     "prettier:format": "prettier --config .prettierrc 'src/**/*.js' --write",
     "eslint": "eslint --config .eslintrc 'src/**/*.js'",
