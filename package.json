@@ -1,0 +1,31 @@
+{
+  "name": "realtime-pizza",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "prettier:format": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "eslint": "eslint --config .eslintrc 'src/**/*.js'",
+    "eslint:fix": "npm run eslint --fix",
+    "dev": "nodemon --watch src -e js,ejs src/server.js",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^7.0.4",
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}
